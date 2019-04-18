@@ -41,7 +41,6 @@ X_test = X_test.to_numpy()
 Y_test = Y_test.to_numpy()
 
 # Now we have to reshape each of them from a list of numbers to a 28*28*4 image and normalize dataset
-
 X_train_img = X_train.reshape(-1, *IM_SIZE).astype(np.uint8)/255
 X_test_img = X_test.reshape(-1, *IM_SIZE).astype(np.uint8)/255
 
